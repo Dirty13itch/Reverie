@@ -1,0 +1,7 @@
+{
+  "name": "Reverie",
+  "description": "A private-first sensory journal for tracking cannabis experiences with a focus on aesthetics and personal insights. No sourcing, no sales.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
