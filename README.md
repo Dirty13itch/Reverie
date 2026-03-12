@@ -1,20 +1,34 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Reverie
 
-# Run and deploy your AI Studio app
+Reverie is a private-first sensory journal for cannabis sessions. The current MVP focuses on logging sessions, visualizing effects, and generating personal insight summaries without turning the product into a marketplace or sourcing app.
 
-This contains everything you need to run your app locally.
+## Stack
 
-View your app in AI Studio: https://ai.studio/apps/drive/12aQkwWpgmrk2v4XplIXWuGme0CWr2AWb
+- React 19 + TypeScript
+- Vite 6
+- Gemini-backed optional insight generation
+- Local-first session data
 
-## Run Locally
-
-**Prerequisites:**  Node.js
-
+## Local workflow
 
 1. Install dependencies:
    `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
+2. Optional: add `GEMINI_API_KEY` to `.env.local`
+3. Start the app:
    `npm run dev`
+
+## Verification
+
+- Typecheck: `npm run typecheck`
+- Production build: `npm run build`
+- Full repo smoke: `npm run smoke`
+
+## Main workflow
+
+1. Open the dashboard and review the latest session card.
+2. Add or inspect session entries through the journal flow.
+3. Generate insight summaries from recent sessions when Gemini is configured.
+
+## Deployment posture
+
+Current posture is local-only static hosting. The repo is suitable for a lightweight preview deploy once key handling is finalized.

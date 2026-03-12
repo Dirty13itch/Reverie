@@ -394,7 +394,7 @@ const App: React.FC = () => {
               className="w-16 h-16 md:w-20 md:h-20 -mt-16 md:-mt-20 bg-gradient-to-t from-[#05020c] to-fuchsia-900 rounded-full flex items-center justify-center text-white shadow-[0_0_40px_rgba(192,38,211,0.4)] active:shadow-[0_0_60px_rgba(192,38,211,0.6)] active:scale-95 transition-all duration-300 border border-white/20 group relative overflow-hidden animate-breathe"
             >
               <div className="absolute inset-0 bg-gradient-to-t from-transparent via-white/10 to-transparent translate-y-full md:group-hover:translate-y-[-100%] transition-transform duration-1000" />
-              <Plus size={32} md:size={36} className="md:group-hover:rotate-180 transition-transform duration-700" strokeWidth={1} />
+              <Plus size={32} className="md:w-9 md:h-9 md:group-hover:rotate-180 transition-transform duration-700" strokeWidth={1} />
             </button>
 
             <button 
